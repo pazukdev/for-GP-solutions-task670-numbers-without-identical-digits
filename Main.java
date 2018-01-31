@@ -50,13 +50,6 @@ public class Main {
         if(checkInput) {
             int arrayIndex=position-1; // convert position number to array index
             writer.print(arrayProcessed.get(arrayIndex)); // print the number in output file
-            //System.out.println(position);
-            //System.out.println(checkInput);
-            //System.out.println(arrayProcessed.get(arrayIndex));
-        }
-        else {
-            //System.out.println(position);
-            //System.out.println(checkInput);
         }
         writer.close();
 
@@ -107,11 +100,7 @@ public class Main {
                 arrayProcessed.set(i, 0); // mark all numbers with identical digits
             }
         }
-
-        //System.out.println(Arrays.toString(arrayUnprocessed));
-        //System.out.println(arrayProcessed);
         arrayProcessed.removeAll(Collections.singleton(0)); // remove all marked numbers from processed array
-        //System.out.println(arrayProcessed);
     }
 
     static int getPositionNumber() throws FileNotFoundException { // get position number from file
